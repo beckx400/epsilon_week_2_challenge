@@ -3,12 +3,26 @@
 body{
 	font-family: 'Roboto', 'Verdana', sans-serif;
 }
-
+h1{
+	text-align: center;
+	background-color: #0066FF;
+	color: white;
+	padding: 20px 0 20px 0;
+}
 input{
 	display: block;
 	margin-bottom: 5px;
+	padding-right: 200px;
 }
-
+form{
+	width: 350px;
+	margin: auto;
+	margin-bottom: 25px;
+}
+ul{
+	width: 150px;
+	margin: auto;
+}
 li{
 	margin-bottom: 5px;
 	list-style-type: none;
@@ -33,11 +47,15 @@ button {
 .red {
 	color: red;
 }
-
+.light-red{
+	color: #FF4500;
+}
 .orange {
 	color: orange;
 }
-
+.light-green{
+	color: #99FF66;
+}
 .green {
 	color: green;
 }

@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	var salaryCounter = 0;
 	var totalSalary = "<h2>The total salary equals $" + salaryCounter + ".</h2>";
-	$("#salary-counter").append(totalSalary);
+	//$("#salary-counter").append(totalSalary);
 
 	$("form").on("submit", function(event){
 		event.preventDefault();
@@ -22,7 +22,7 @@ $(document).ready(function(){
 		var salary = "<li>$" + values.baseSalary + "</li>";
 		var removeButton = "<button class='remove'>Remove this employee!</button>";
 
-		//determine review score and review score associated color
+//determine review score and review score associated color
 		var reviewScore = parseInt(values.lastReviewScore);
 		switch(reviewScore){
 			case 1:
@@ -30,7 +30,7 @@ $(document).ready(function(){
 			break;
 
 			case 2:
-			lastReviewScore = "<li id='review' class='red'>Last Review Score: " + values.lastReviewScore + "</li>";
+			lastReviewScore = "<li id='review' class='light-red'>Last Review Score: " + values.lastReviewScore + "</li>";
 			break;
 
 			case 3:
@@ -38,7 +38,7 @@ $(document).ready(function(){
 			break;
 
 			case 4:
-			lastReviewScore = "<li id='review' class='green'>Last Review Score: " + values.lastReviewScore + "</li>";
+			lastReviewScore = "<li id='review' class='light-green'>Last Review Score: " + values.lastReviewScore + "</li>";
 			break;
 
 			case 5:
@@ -55,7 +55,7 @@ $(document).ready(function(){
 //created functionality for remove button
 		$(".remove").on("click", function(){
 			$(this).closest("ul").remove();
-			salaryCounter -= parseInt($(this).closest("ul").children("li").last().val());
+			salaryCounter -= parseInt($(this).closest("ul").children("li").last());
 		});
 
 	});
