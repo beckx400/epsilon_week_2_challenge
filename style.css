@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body{
+	font-family: 'Roboto', 'Verdana', sans-serif;
+}
+
+input{
+	display: block;
+	margin-bottom: 5px;
+}
+
+li{
+	margin-bottom: 5px;
+	list-style-type: none;
+	margin-left: -35px;
+}
+button {
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+	margin-bottom: 5px;
+	padding: 5px;
+	border-radius: 3px;
+	background: red;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.remove{
+	margin-left: -35px;
+}
+.reset{
+	background: orange;
+}
+.red {
+	color: red;
+}
+
+.orange {
+	color: orange;
+}
+
+.green {
+	color: green;
+}
